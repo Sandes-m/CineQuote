@@ -1,0 +1,240 @@
+/* 1. Configurações Gerais e Cores */
+:root {
+    --bg-color: #000b1f;
+    --card-bg: #1f2c44;
+    --accent-blue: #0084ff;
+    --accent-teal: #5c66f0;
+    --accent-purple: #8e44ad;
+    --text-primary: #ffffff;
+    --text-secondary: #abb5c4;
+    --border-color: #5d6879;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+}
+body {
+    background: radial-gradient(circle at top, #1a2639 0%, var(--bg-color) 100%);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+/* 2. Container Central */
+.container {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+/* 3. Cabeçalho */
+.header {
+    text-align: center;
+}
+.logo {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+.logo span {
+    color: var(--accent-teal);
+}
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: 5px;
+}
+/* 4. Card da Citação (Layout Lado a Lado) */
+.card-quote {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+}
+/* Pôster */
+.poster-container {
+    flex-shrink: 0;
+}
+#poster {
+    width: 220px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+/* Informações do Filme/Frase */
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 15px;
+    flex-grow: 1;
+}
+#titulo-obra {
+    font-size: 1.8rem;
+    color: #fff;
+}
+.quote-box p {
+    font-size: 1.25rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #f1f5f9;
+    border-left: 4px solid var(--accent-teal);
+    padding-left: 15px;
+}
+.character-info {
+    font-size: 1rem;
+    color: var(--text-secondary);
+}
+.character-info strong {
+    color: var(--accent-teal);
+}
+/* Caixa de Contexto */
+.context-box {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+.context-label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: var(--accent-teal);
+    margin-bottom: 4px;
+}
+#contexto {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+/* Botão Ouvir */
+.btn-secondary {
+    background: transparent;
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+.btn-secondary:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+    border-color: #fff;
+}
+/* 5. Barra de Ações Inferior */
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 15px 25px;
+    border-radius: 12px;
+}
+/* Filtro de Tema */
+.vibe-filter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.vibe-filter label {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+#vibe-select {
+    background-color: var(--card-bg);
+    color: #fff;
+    border: 1px solid var(--border-color);
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+}
+/* Grupo de Botões Principais */
+.button-group {
+    display: flex;
+    gap: 12px;
+}
+button {
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none !important;
+    filter: none !important;
+}
+.btn-primary {
+    background-color: var(--accent-blue);
+    color: #fff;
+}
+.btn-primary:hover {
+    background-color: #006ed4;
+    transform: translateY(-2px);
+}
+.btn-ai {
+    background: linear-gradient(135deg, var(--accent-purple), #6c5ce7);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(142, 68, 173, 0.3);
+}
+.btn-ai:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+}
+/* 6. Responsividade para Celulares */
+@media (max-width: 700px) {
+    .card-quote {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .quote-box p {
+        border-left: none;
+        border-bottom: 2px solid var(--accent-teal);
+        padding-bottom: 10px;
+        padding-left: 0;
+    }
+    .actions-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .button-group {
+        flex-direction: column;
+    }
+}
+
+.btn-stop {
+    background: transparent;
+    color: #fff;
+    border: 1px solid var(--border-color);
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 8px;
+    transition: filter 0.2s ease;
+}
+
+.btn-stop:hover {
+    filter: brightness(1.2);
+}

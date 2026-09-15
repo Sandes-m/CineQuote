@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cine Quote</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <header class="header">
+            <h1 class="logo">CINE<span>QUOTE</span></h1>
+            <p class="subtitle">Frases clássicas de filmes e séries</p>
+        </header>
+
+        <section class="card-quote">
+            <div class="poster-container">
+                <img id="poster" src="https://via.placeholder.com/300x450?text=CineQuote" alt="Pôster do Filme ou Série">
+            </div>
+
+            <div class="info-container">
+                <h2 id="titulo-obra">Carregando título...</h2>
+                
+                <blockquote class="quote-box">
+                    <p id="frase">"Clique no botão abaixo para carregar uma frase marcante."</p>
+                </blockquote>
+                <p class="character-info">
+                    Citado por: <strong id="personagem">...</strong>
+                </p>
+
+                <div class="context-box">
+                    <span class="context-label">🎬 Contexto da Cena:</span>
+                    <p id="contexto">Aguardando citação...</p>
+                </div>
+
+                <div class="audio-action">
+                    <button id="btn-ouvir" class="btn-secondary" title="Ouvir com áudio">
+                        🔊 Ouvir Frase
+                    </button>
+                    <button id="btn-parar" class="btn-stop" style="display: none;" title="Parar áudio">
+                        🟥 Parar
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="actions-container">
+            <div class="vibe-filter">
+                <label for="vibe-select">Filtrar por Gênero:</label>
+                <select id="vibe-select">
+                    <option value="">Todos os Gêneros</option>
+                    <option value="acao">🥊 Ação</option>
+                    <option value="comedia">😂 Comédia</option>
+                    <option value="drama">🎭 Drama</option>
+                    <option value="ficcao">🌌 Ficção</option>
+                    <option value="animacao">👾 Animação</option>
+                    <option value="crime">🕵️ Crime</option>
+                    <option value="suspense">😬 Suspense</option>
+                    <option value="terror">👻 Terror</option>
+                    <option value="romance">❤️ Romance</option>
+                    <option value="aventura">🗺️ Aventura</option>
+                    <option value="fantasia">🧙‍♂️ Fantasia</option>
+                    <option value="misterio">🔍 Mistério</option>
+                    <option value="biografia">📖 Biografia</option>
+                    <option value="outro">🍿 Outros</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button id="btn-outra-frase" class="btn-primary">
+                    🎲 Ver outra obra
+                </button>
+                <button id="btn-gerar-ia" class="btn-ai">
+                    🤖 Buscar frases da obra com IA
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
