@@ -1,6 +1,6 @@
 const baseURL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
     ? 'http://localhost:8080'
-    : 'https://sua-api-no-render.onrender.com';
+    : 'https://cinequote-api-jxtg.onrender.com';
 
 const posterImg = document.getElementById('poster');
 const tituloObra = document.getElementById('titulo-obra');
