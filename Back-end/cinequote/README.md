@@ -1,7 +1,5 @@
 # CineQuote - Catálogo Cinematográfico
 
----
-
 ## 🎬 Visão Geral do Projeto / Project Overview
 
     O CineQuote é uma aplicação Full-Stack interativa de citações cinematográficas. Desenvolvido em
@@ -19,6 +17,7 @@
 🎯 **Objetivo (Objective):** Desenvolver uma aplicação Web Full-Stack completa e interativa, aplicando na prática
 conceitos arquiteturais e boas práticas da engenharia como **Prompt Engineering**, **Data Transfer Objects (DTOs)**, **JPQL**,
 **Domain-Driven Design (DDD)**, **Spring Profiles** e **UX/Acessibilidade**.
+
 ---
 
 ## 📂 Estrutura do Projeto / Project Structure
