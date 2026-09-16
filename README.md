@@ -4,11 +4,21 @@
 
 ## 🎬 Visão Geral do Projeto / Project Overview
 
-O CineQuote é uma aplicação Full-Stack interativa de citações cinematográficas. Desenvolvido em Java (Spring Boot) no Back-end, conta com a integração de IA Generativa (Google Gemini) e da OMDb API, orquestrando a persistência relacional através do PostgreSQL. Já o Front-end desenvolvido em JavaScript é responsável pelo consumo da API REST entregando uma interface responsiva e acessibilidade através da Web Speech API.
+    O CineQuote é uma aplicação Full-Stack interativa de citações cinematográficas. Desenvolvido em
+    Java (Spring Boot) no Back-end, conta com a integração de IA Generativa (Google Gemini) e da  
+    OMDb API, orquestrando a persistência relacional através do PostgreSQL. Já o Front-end desenvolvido
+    em JavaScript é responsável pelo consumo da API REST entregando uma interface responsiva e 
+    acessibilidade através da Web Speech API. 
 
-*EN: CineQuote is an interactive Full-Stack application for iconic cinema quotes. Built with Java (Spring Boot) on the Back-end, it integrates Generative AI (Google Gemini) and the OMDb API, orchestrating relational persistence through PostgreSQL. The Front-end, developed in JavaScript, consumes the REST API to deliver a responsive user interface and native accessibility features powered by the Web Speech API.*
+    EN: CineQuote is an interactive Full-Stack application for iconic cinema quotes. Built with 
+    Java (Spring Boot) on the Back-end, it integrates Generative AI (Google Gemini) and the OMDb API,
+    orchestrating relational persistence through PostgreSQL. The Front-end, developed in JavaScript, 
+    consumes the REST API to deliver a responsive user interface and native accessibility features 
+    powered by the Web Speech API.
 
-**Objetivo (Objective):** Desenvolver uma aplicação Web Full-Stack completa e interativa, aplicando na prática conceitos arquiteturais e boas práticas da engenharia como **Prompt Engineering**, **Data Transfer Objects (DTOs)**, **JPQL**, **Domain-Driven Design (DDD)**, **Spring Profiles** e **UX/Acessibilidade**.
+**Objetivo (Objective):** Desenvolver uma aplicação Web Full-Stack completa e interativa, aplicando na prática
+conceitos arquiteturais e boas práticas da engenharia como **Prompt Engineering**, **Data Transfer Objects (DTOs)**, **JPQL**,
+**Domain-Driven Design (DDD)**, **Spring Profiles** e **UX/Acessibilidade**.
 
 ---
 
