@@ -14,7 +14,7 @@
     consumes the REST API to deliver a responsive user interface and native accessibility features 
     powered by the Web Speech API.
 
-🎯 **Objetivo (Objective):** Desenvolver uma aplicação Web Full-Stack completa e interativa, aplicando na prática
+**Objetivo (Objective):** Desenvolver uma aplicação Web Full-Stack completa e interativa, aplicando na prática
 conceitos arquiteturais e boas práticas da engenharia como **Prompt Engineering**, **Data Transfer Objects (DTOs)**, **JPQL**,
 **Domain-Driven Design (DDD)**, **Spring Profiles** e **UX/Acessibilidade**.
 
@@ -127,8 +127,8 @@ tratamento de estados de carregamento e a integração de acessibilidade com a *
 
 A aplicação está totalmente disponível na nuvem para teste imediato:
 
-* 🌐 **Aplicação Web (Front-end):** [https://cinequote.vercel.app](https://sua-url-aqui.vercel.app) *(substituiremos pelo seu link final)*
-* ⚙️ **API REST (Back-end):** [https://cinequote.onrender.com](https://sua-url-aqui.onrender.com) *(substituiremos pelo seu link final)*
+* 🌐 **Aplicação Web (Front-end):** [https://cinequote.vercel.app](https://sua-url-aqui.vercel.app) 
+* ⚙️ **API REST (Back-end):** [https://cinequote.onrender.com](https://sua-url-aqui.onrender.com) 
 
 > **(AVISO)**  
 > Como o Back-end e o banco estão hospedados no plano gratuito do Render, o servidor pode levar de 30 a 50 segundos para "acordar" 
