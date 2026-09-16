@@ -10,6 +10,7 @@ import br.com.sandes.cinequote.repository.ObraRepository;
 import br.com.sandes.cinequote.service.AiClient;
 import br.com.sandes.cinequote.service.OmdbClient;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
@@ -18,7 +19,7 @@ import java.util.UUID;
 
 @Component
 @Profile("dev")
-public class DataSeeder {
+public class DataSeeder implements CommandLineRunner {
 
     @Autowired
     private FrasesRepository frasesRepository;
@@ -93,4 +94,8 @@ public class DataSeeder {
         }
     }
 
+    @Override
+    public void run(String... args) throws Exception {
+        seedDataBase();
+    }
 }
